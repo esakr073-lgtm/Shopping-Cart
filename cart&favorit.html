@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>Cart Products And Favorit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <header id="nav_div">
+        <nav  class="navbar fixed-top" style="background-color: rgb(20, 20, 20); padding: 10px 40px; opacity: 0.85;">
+            <div class="container-fluid d-flex">
+                <a href="index.html">
+                    <img href="index.html" class="home_img" src="images/logo2.png" alt="logo-image"
+                width="100px" height="65px">
+                </a>
+                <ul style="margin-right: auto; margin-left: 20px; text-decoration: none;" class="home">
+                    <li class="home_li"><a class="home_link" style="text-decoration: none;" href="index.html">Home Page</a></li>
+                </ul>
+                <ul class="header_links">
+                    <li><a id="user" href="#"></a></li>
+
+                    <li>
+                        <a href="#" id="favorit_icon"><i class="fa-regular fa-heart heart_icon"></i></a>
+                        <span id="favorit_num">0</span>
+                        <div id="favorit_div1">
+                            <div id="favorit_div2">
+                                <div class="favorit1">
+                                    <div>
+                                        <h3 class="product_title1">Black Suit</h3>
+                                        <i class="fa fa-heart heart2" data-toggle="tooltip" title="remove from cart !!"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" id="view_favorit">View All Favorits</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="cart_icon"><i style="font-size: 21px;" class="fa-solid fa-cart-shopping shopping_cart"></i></a>
+                        <span class="shopping_cart_num">0</span>
+                        <div class="cart_div" id="cart_div1">
+                            <div class="cart_div2"></div>
+                            <a class="view_product_btn" href="">View All Products</a>
+                        </div>
+                    </li>
+
+                    <ul id="user_ul">
+                       <li><a id="loginBtn" class="btn btn-outline-info" href="login.html">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                       <li><a id="registBtn" class="btn btn-outline-success" href="register.html">Register <i style="font-size: 18px; transform: rotatey(180deg);" class="fa-solid fa-person-circle-plus"></i></a></li>
+                    </ul>
+
+                    <li><a id="logOutBtn" class="btn btn-outline-danger" href="#">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<section>
+    <div class="container cart_prod">
+        <h2 class="cart_title">Cart Products </h2>
+        <h3 id="emptyCart">Cart Is Empty !!</h3>
+        <div id="all_prod">
+            <div id="prod">
+                <img src="images/black-watch.jpg" alt="image">
+                <div id="prod_content">
+                    <div>
+                        <h3 id="prod_title">Golden Watch</h3>
+                        <p id="prod_category">Category: watches</p>
+                        <p id="prod_price">Price: 300$</p>
+                    </div>
+                    <div id="prod_icons">
+                        <i class="fa-solid fa-circle-minus update_btn"></i><span id="product_num">0</span><i class="fa-solid fa-circle-plus update_btn"></i>
+                        <button class="remove_from_cart2" id="removeBtn2">Remove From Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="totalPrice">Total Price: <span id="tPrice"></span> $</div>
+    </div>
+    <hr style="background-color: rgb(0, 229, 255);">
+    <h2 class="favorit_title">Favourite Products </h2>
+    <h3 id="emptyFavorit">Favourite Is Empty !!</h3>
+    <div class="all_favorit container" id="All_favorit">
+        <!-- <div class="favorit_prod">
+            <img src="images/black-shoes.png" alt="product image">
+            <div class="favorit_cont">
+                <h3>Black Shoes</h3>
+                <p>category: <span></span></p>
+                <i class="fa fa-heart heart2" data-toggle="tooltip" title="remove from cart !!"></i>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+    <script src="js/user1.js"></script>
+    <script src="js/carts1.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Project_4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <header id="nav_div">
+        <nav  class="navbar fixed-top" style="background-color: rgb(20, 20, 20); padding: 10px 40px; opacity: 0.85;">
+            <div class="container-fluid d-flex">
+                <a href="index.html">
+                    <img href="index.html" class="home_img" src="images/logo2.png" alt="logo-image"
+                width="100px" height="65px">
+                </a>
+                <ul style="margin-right: auto; margin-left: 20px; text-decoration: none;" class="home">
+                    <li class="home_li"><a class="home_link" style="text-decoration: none;" href="index.html">Home Page</a></li>
+                </ul>
+                <ul class="header_links">
+                    <li><a id="user" href="#"></a></li>
+
+                    <li>
+                        <a href="#" id="favorit_icon"><i class="fa-regular fa-heart heart_icon"></i></a>
+                        <span id="favorit_num">0</span>
+                        <div id="favorit_div1">
+                            <div id="favorit_div2">
+                                <div class="favorit1">
+                                    <div>
+                                        <h3 class="product_title1">Black Suit</h3>
+                                        <i class="fa fa-heart heart2" data-toggle="tooltip" title="remove from cart !!"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" id="view_favorit_btn">View All Favorits</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="cart_icon"><i style="font-size: 21px;" class="fa-solid fa-cart-shopping shopping_cart"></i></a>
+                        <span class="shopping_cart_num">0</span>
+                        <div class="cart_div" id="cart_div1">
+                            <h2>cart products</h2>
+                            <div class="scroll_div">
+                                <div class="cart_div2"></div>
+                            </div>
+                            <a class="view_product_btn" href="#">View All Products</a>
+                        </div>
+                    </li>
+
+                    <ul id="user_ul">
+                       <li><a id="loginBtn" class="btn btn-outline-info" href="login.html">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                       <li><a id="registBtn" class="btn btn-outline-success" href="register.html">Register <i style="font-size: 18px; transform: rotatey(180deg);" class="fa-solid fa-person-circle-plus"></i></a></li>
+                    </ul>
+
+                    <li><a id="logOutBtn" class="btn btn-outline-danger" href="#">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////// -->
+
+    
+    <section>
+        <div class="container search_div">
+            <div class="">
+                <select name="categories" id="select_list">
+                    <option value="1" id="select_list1" >Search by Product Name</option>
+                    <option value="2" id="select_list2">Search by Category</option>
+                </select>
+            </div>
+
+            <div class="">
+                <input id="search_input" class="search_area" type="search" placeholder="Search...">
+            </div>
+            <div class="">
+                <button class="btn" id="search_btn" >Search</button>
+            </div>
+        </div>
+        <!-- //////////////////// -->
+
+        <div class="container products">
+            <div class="all_products">
+                <div class="product_div">
+                    <img src="" alt="product image">
+                    <div class="product_info">
+                        <h3>Golden watch</h3>
+                        <p>price: 500$</p>
+                        <p>category: watches</p>
+                        <div class="product_icons">
+                            <i class="far fa-heart" id="add_to_favorit"></i>
+                            <i class="far fa-heart" id="remove_from_favorit"></i>
+                            <button class="add_to_cart" id="addBtn">Add to Cart</button>
+                            <button class="remove_from_cart" id="removeBtn">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/Home1.js"></script>
+    <script src="js/user1.js"></script>
+
+</body>
+</html>
