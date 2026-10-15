@@ -93,7 +93,7 @@ let products = [
         id: 11,
         title: "Precision 5540",
         price: 999,
-        category: "watches",
+        category: "laptops",
         imageUrl: "images/pres-5540.jpg",
         number:1
     }, {
@@ -107,7 +107,7 @@ let products = [
         id: 13,
         title: "oppo reno 12 pro",
         price: 999,
-        category: "watches",
+        category: "Phones",
         imageUrl: "images/oppo.jpg",
         number:1
     }, {
