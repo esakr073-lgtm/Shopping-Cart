@@ -93,7 +93,7 @@ let products = [
         id: 11,
         title: "Precision 5540",
         price: 999,
-        category: "laptops",
+        category: "laptop",
         imageUrl: "images/pres-5540.jpg",
         number:1
     }, {
@@ -338,8 +338,9 @@ function show_cart() {
             }, 500);
         }
     }
-
 }
+
+
 
 cart_icon.addEventListener("click", function (event) {
     event.preventDefault()
@@ -394,7 +395,7 @@ function show_favorit() {
             favorit_div1.style.display = "none"
             alert("The favorit is Empty !!")
         }
-        if(cart_div1.style.display=="block"){
+        if(cart_div1.style.display=="flex"){
             cart_div1.style.display="none"
         }
     } else {
